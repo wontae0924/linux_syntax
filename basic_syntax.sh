@@ -12,11 +12,11 @@ ls -al
 mkdir wontae_dir
 # cd "폴더명" : 특정 디렉토리로 이동
 cd wontae_dir
-# 루트디렉토리 이동
+# 루트디렉토리(최상위) 이동
 cd /
 # 기존 폴더로 이동
-cd /home/wontae/wontae_dir
-# 상위 폴더로 이동
+/cd /home/wontae/wontae_dir
+# 상위 폴더로 이동(.은 현재폴더 ..은 상위경로)
 cd ../
 # touch "파일명" : 비어있는 파일 만들기
 touch first_flie.txt
@@ -44,4 +44,7 @@ cp -r test_dir wontae_dit/second_dir
 # mv를 통해 파일명 변경도 가능 -> mv abc.txt bcd.txt
 # mv를 통해 파일명 변경하면서 이동도 됨 mv abc.txt wontae_dit/bcd.txt
 mv test_dir wontae_dit/second_dir
-# head 앞 10행 출력 tail 
+# head 앞 10행 출력 뒤에서 10행 출력 tail 
+# 앞에서 3개 출력할려면 head -3 파일명 , 뒤에서 7개만 출력할려면 tail -7 파일명
+head first_flie.txt
+tail first_flie.txt
